@@ -30,7 +30,7 @@ for (let i = 0; i < companies.length; i++) {
 </code>
 </pre>
 
-###### 코드가 훨씬 간결해졌다!!
+##### 코드가 훨씬 간결해졌다!!
 
 <pre>
 <code>
@@ -53,7 +53,7 @@ console.log(company.name);
 </code>
 </pre>
 
-###### filter 함수는 조건에 맞는 요소들만 뽑아서 새로운 배열로 반환해준다.
+##### filter 함수는 조건에 맞는 요소들만 뽑아서 새로운 배열로 반환해준다.
 
 <pre>
 <code>
@@ -65,7 +65,7 @@ console.log(company.name);
 </code>
 </pre>
 
-###### 화살표 함수를 사용하여 더 간결하게 만들었다!! (return과 function 키워드가 없어짐)
+##### 화살표 함수를 사용하여 더 간결하게 만들었다!! (return과 function 키워드가 없어짐)
 
 <pre>
 <code>
@@ -83,7 +83,7 @@ const companyNames = companies.map(function (company) {
 </code>
 </pre>
 
-###### 화살표 함수 이용
+##### 화살표 함수 이용
 
 <pre>
 <code>
@@ -91,7 +91,7 @@ const companyNames = companies.map((company) => `${company.name}`);
 </code>
 </pre>
 
-###### map 함수로 이렇게 식을 더 해 반환 해줄수 있다.
+##### map 함수로 이렇게 식을 더 해 반환 해줄수 있다.
 
 <pre>
 <code>
@@ -113,7 +113,7 @@ const sortedCompanies = companies.sort(function (c1, c2) {
 </code>
 </pre>
 
-###### 화살표함수와 삼항연사자를 사용했다
+##### 화살표함수와 삼항연사자를 사용했다
 
 <pre>
 <code>
@@ -134,7 +134,7 @@ for (let i = 0; i < ages.length; i++) {
 
 ### reduce함수를 이용하면 더욱 간단하게 만들수 있다.
 
-###### total = accumulator, age = current라고 생각하면 된다.
+##### total = accumulator, age = current라고 생각하면 된다.
 
 <pre>
 <code>
@@ -144,7 +144,7 @@ const ageSum = ages.reduce(function (total, age) {
 </code>
 </pre>
 
-###### 화살표 함수 적용
+##### 화살표 함수 적용
 
 <pre>
 <code>
@@ -152,7 +152,7 @@ const ageSumArrow = ages.reduce((age, total) => age + total, 0);
 </code>
 </pre>
 
-###### 배웠던것 동시 적용
+##### 배웠던것 동시 적용
 
 <pre>
 <code>
@@ -163,3 +163,5 @@ const combined = ages
   .reduce((a, b) => a + b, 0);
 </code>
 </pre>
+
+##### combined 변수는 ages 배열 요소들을 x2하고 그중에서 40이 넘는것만 합친 값이다.
